@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B1020">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Night-sky tours planned near Joshua Tree: photos under the stars, meteor watching, and a short, friendly talk about the sky. First tours planned for the Geminids, December 2026, pending permits.">
+  <meta property="og:title" content="SoCal Dark Sky Tours">
+  <meta property="og:description" content="Night-sky tours planned near Joshua Tree: photos under the stars, meteor watching, and a short, friendly talk about the sky. First tours planned for the Geminids, December 2026, pending permits.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://socaldarksky.github.io/og-joshua-tree-night-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A Joshua tree in silhouette under a starry night sky.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SoCal Dark Sky Tours">
+  <meta name="twitter:description" content="Night-sky tours planned near Joshua Tree: photos under the stars, meteor watching, and a short, friendly talk about the sky. First tours planned for the Geminids, December 2026, pending permits.">
+  <meta name="twitter:image" content="https://socaldarksky.github.io/og-joshua-tree-night-1200x630.jpg">
+  <meta name="twitter:image:alt" content="A Joshua tree in silhouette under a starry night sky.">
+  <title>SoCal Dark Sky Tours</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="preload" href="Inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" imagesrcset="joshua-tree-night-1200.webp 1200w, joshua-tree-night-2000.webp 2000w, joshua-tree-night-2656.webp 2656w" imagesizes="(min-aspect-ratio: 1/1) 130vw, 100vw">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <canvas class="sky-canvas" aria-hidden="true"></canvas>
+  <div class="sky-fallback" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="#top">SOCAL DARK SKY TOURS</a>
+      <input type="checkbox" id="nav-toggle" class="nav-check" autocomplete="off" aria-label="Menu">
+      <label class="nav-toggle" for="nav-toggle"><span class="visually-hidden">Menu</span><span class="nav-bars" aria-hidden="true"></span></label>
+      <nav class="nav-links" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#what-we-do">What we do</a></li>
+          <li><a href="#what-you-get">What’s included</a></li>
+          <li><a href="#before-you-come">Before you come</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#follow-us">Follow us</a></li>
+        </ul>
+        <div class="nav-social">
+          <a href="https://www.instagram.com/socaldarksky.tours/">Instagram</a>
+          <a href="https://www.tiktok.com/@socaldarksky.tours">TikTok</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top" aria-label="Introduction">
+    <div class="hero-media" data-parallax="0.28">
+      <picture>
+        <source type="image/webp" srcset="joshua-tree-night-1200.webp 1200w, joshua-tree-night-2000.webp 2000w, joshua-tree-night-2656.webp 2656w" sizes="(min-aspect-ratio: 1/1) 130vw, 100vw">
+        <img src="joshua-tree-night-2000.jpg" srcset="joshua-tree-night-1200.jpg 1200w, joshua-tree-night-2000.jpg 2000w, joshua-tree-night-2656.jpg 2656w" sizes="(min-aspect-ratio: 1/1) 130vw, 100vw" alt="" width="2656" height="3624" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <h1 class="hero-title"><span class="hl hl-1"><span class="nowrap">Night-sky</span> tours</span> <span class="hl hl-2">in Joshua Tree National Park</span></h1>
+      <p class="hero-lede">Photos under the stars, meteor watching, and a short, friendly talk about the sky.</p>
+      <p class="hero-date">First tours planned for the Geminids, December 2026, <span class="nowrap">pending permits.</span></p>
+      <a class="btn btn-glass hero-cta" href="https://www.instagram.com/socaldarksky.tours/">Follow along on Instagram</a>
+    </div>
+    <p class="hero-credit">Photo: Khanh Toan Nguyen</p>
+    <a class="scroll-cue" href="#what-we-do"><span>Scroll</span><i aria-hidden="true"></i></a>
+  </section>
+
+  <main id="main">
+    <section class="chapter chapter-intro" id="what-we-do">
+      <div class="wrap narrow">
+        <p class="kicker reveal"><span class="kicker-num">01</span>The tour</p>
+        <h2 class="display reveal">What we do</h2>
+        <p class="statement" data-litext>We’re planning small-group night-sky tours in the Joshua Tree area. The evening will be unhurried: time for photos under the stars, a chance to watch for meteors, and a short, friendly talk about the sky, in plain English.</p>
+        <p class="sub reveal">Every night will be a little different. We’ll take our time, look up together, and help you notice what’s overhead.</p>
+      </div>
+    </section>
+
+    <section class="chapter chapter-gemini" aria-labelledby="gemini-title">
+      <div class="wrap gemini-grid">
+        <figure class="gemini-figure reveal" data-draw>
+          <svg class="gemini" viewBox="0 0 640 600" role="img" aria-labelledby="gem-t">
+<title id="gem-t">Diagram of the constellation Gemini, with its brightest stars Castor and Pollux.</title>
+<defs><radialGradient id="gem-glow"><stop offset="0" stop-color="#F5F5F5" stop-opacity="0.55"/><stop offset="0.35" stop-color="#C8CCD8" stop-opacity="0.16"/><stop offset="1" stop-color="#969EC4" stop-opacity="0"/></radialGradient></defs>
+<g class="gem-bg">
+<circle cx="623.7" cy="188.8" r="1.04" opacity="0.52"/>
+<circle cx="605.9" cy="102.5" r="0.56" opacity="0.31"/>
+<circle cx="604.9" cy="226.7" r="0.93" opacity="0.48"/>
+<circle cx="629.8" cy="507.3" r="0.62" opacity="0.34"/>
+<circle cx="617.8" cy="578.1" r="1.28" opacity="0.59"/>
+<circle cx="591.0" cy="361.3" r="0.80" opacity="0.43"/>
+<circle cx="587.8" cy="352.1" r="1.01" opacity="0.51"/>
+<circle cx="580.5" cy="286.4" r="1.25" opacity="0.58"/>
+<circle cx="579.4" cy="467.5" r="1.11" opacity="0.54"/>
+<circle cx="555.7" cy="311.3" r="0.56" opacity="0.30"/>
+<circle cx="553.2" cy="292.0" r="0.60" opacity="0.33"/>
+<circle cx="542.1" cy="265.4" r="0.58" opacity="0.32"/>
+<circle cx="557.6" cy="480.7" r="1.10" opacity="0.54"/>
+<circle cx="547.6" cy="362.5" r="0.60" opacity="0.33"/>
+<circle cx="553.6" cy="439.7" r="0.87" opacity="0.46"/>
+<circle cx="524.2" cy="91.4" r="0.59" opacity="0.33"/>
+<circle cx="538.3" cy="402.9" r="0.57" opacity="0.31"/>
+<circle cx="534.4" cy="376.7" r="0.78" opacity="0.42"/>
+<circle cx="541.4" cy="489.2" r="0.56" opacity="0.30"/>
+<circle cx="515.6" cy="160.6" r="1.17" opacity="0.56"/>
+<circle cx="536.3" cy="440.4" r="0.73" opacity="0.40"/>
+<circle cx="540.3" cy="517.3" r="0.70" opacity="0.38"/>
+<circle cx="537.1" cy="523.5" r="0.84" opacity="0.44"/>
+<circle cx="537.2" cy="574.5" r="0.71" opacity="0.39"/>
+<circle cx="514.6" cy="473.2" r="0.63" opacity="0.34"/>
+<circle cx="454.0" cy="144.5" r="0.60" opacity="0.33"/>
+<circle cx="457.5" cy="541.8" r="0.77" opacity="0.41"/>
+<circle cx="434.5" cy="104.2" r="0.58" opacity="0.32"/>
+<circle cx="445.8" cy="486.1" r="0.66" opacity="0.36"/>
+<circle cx="426.1" cy="197.9" r="0.76" opacity="0.41"/>
+<circle cx="440.7" cy="575.9" r="0.56" opacity="0.30"/>
+<circle cx="410.8" cy="178.5" r="0.60" opacity="0.33"/>
+<circle cx="415.0" cy="511.8" r="0.54" opacity="0.29"/>
+<circle cx="411.0" cy="578.4" r="1.00" opacity="0.50"/>
+<circle cx="399.0" cy="413.9" r="0.78" opacity="0.42"/>
+<circle cx="393.4" cy="506.9" r="1.08" opacity="0.53"/>
+<circle cx="381.8" cy="179.8" r="0.70" opacity="0.38"/>
+<circle cx="358.3" cy="104.1" r="0.61" opacity="0.33"/>
+<circle cx="362.7" cy="444.6" r="0.57" opacity="0.31"/>
+<circle cx="360.5" cy="503.4" r="0.62" opacity="0.34"/>
+<circle cx="352.8" cy="329.5" r="0.75" opacity="0.41"/>
+<circle cx="350.2" cy="291.6" r="0.62" opacity="0.34"/>
+<circle cx="339.1" cy="508.5" r="0.96" opacity="0.49"/>
+<circle cx="334.4" cy="255.1" r="0.61" opacity="0.33"/>
+<circle cx="330.3" cy="577.7" r="0.56" opacity="0.31"/>
+<circle cx="326.1" cy="81.7" r="0.56" opacity="0.30"/>
+<circle cx="310.7" cy="447.4" r="0.61" opacity="0.33"/>
+<circle cx="300.5" cy="462.9" r="0.59" opacity="0.33"/>
+<circle cx="301.2" cy="279.0" r="0.78" opacity="0.42"/>
+<circle cx="300.2" cy="412.4" r="0.55" opacity="0.30"/>
+<circle cx="299.4" cy="434.9" r="0.57" opacity="0.31"/>
+<circle cx="296.9" cy="173.0" r="0.56" opacity="0.30"/>
+<circle cx="292.9" cy="556.1" r="0.80" opacity="0.43"/>
+<circle cx="286.3" cy="64.4" r="0.66" opacity="0.36"/>
+<circle cx="281.0" cy="74.3" r="0.55" opacity="0.30"/>
+<circle cx="270.2" cy="450.2" r="0.69" opacity="0.37"/>
+<circle cx="260.2" cy="223.8" r="0.60" opacity="0.33"/>
+<circle cx="254.0" cy="280.0" r="0.58" opacity="0.31"/>
+<circle cx="245.3" cy="445.1" r="0.82" opacity="0.44"/>
+<circle cx="237.1" cy="530.5" r="0.61" opacity="0.34"/>
+<circle cx="243.7" cy="264.1" r="0.58" opacity="0.32"/>
+<circle cx="239.7" cy="201.6" r="0.60" opacity="0.33"/>
+<circle cx="205.9" cy="354.8" r="0.82" opacity="0.44"/>
+<circle cx="219.4" cy="12.2" r="0.81" opacity="0.43"/>
+<circle cx="202.6" cy="259.2" r="0.84" opacity="0.44"/>
+<circle cx="200.0" cy="205.2" r="0.60" opacity="0.33"/>
+<circle cx="182.7" cy="539.1" r="0.72" opacity="0.39"/>
+<circle cx="176.7" cy="591.1" r="0.86" opacity="0.45"/>
+<circle cx="181.4" cy="357.7" r="0.55" opacity="0.30"/>
+<circle cx="178.7" cy="332.8" r="0.78" opacity="0.42"/>
+<circle cx="183.5" cy="117.0" r="1.25" opacity="0.58"/>
+<circle cx="178.4" cy="193.9" r="0.82" opacity="0.44"/>
+<circle cx="157.9" cy="531.1" r="1.05" opacity="0.52"/>
+<circle cx="175.9" cy="198.0" r="0.85" opacity="0.45"/>
+<circle cx="153.7" cy="422.8" r="0.69" opacity="0.38"/>
+<circle cx="143.0" cy="448.9" r="0.75" opacity="0.41"/>
+<circle cx="155.3" cy="132.3" r="0.73" opacity="0.40"/>
+<circle cx="145.9" cy="43.5" r="0.65" opacity="0.36"/>
+<circle cx="142.5" cy="53.2" r="0.90" opacity="0.47"/>
+<circle cx="115.8" cy="408.6" r="0.84" opacity="0.44"/>
+<circle cx="116.4" cy="296.3" r="0.56" opacity="0.30"/>
+<circle cx="96.9" cy="497.1" r="0.59" opacity="0.32"/>
+<circle cx="97.1" cy="481.4" r="0.66" opacity="0.36"/>
+<circle cx="114.7" cy="172.8" r="1.21" opacity="0.57"/>
+<circle cx="105.7" cy="237.4" r="0.74" opacity="0.40"/>
+<circle cx="83.4" cy="388.9" r="0.90" opacity="0.47"/>
+<circle cx="68.8" cy="555.1" r="0.76" opacity="0.41"/>
+<circle cx="103.3" cy="74.3" r="0.80" opacity="0.43"/>
+<circle cx="62.6" cy="212.4" r="0.86" opacity="0.45"/>
+<circle cx="37.6" cy="356.3" r="0.72" opacity="0.39"/>
+<circle cx="21.8" cy="442.9" r="0.59" opacity="0.32"/>
+<circle cx="23.4" cy="237.3" r="0.57" opacity="0.31"/>
+<circle cx="16.5" cy="184.9" r="0.88" opacity="0.46"/>
+</g><g class="gem-lines">
+<line x1="169.0" y1="116.8" x2="256.7" y2="151.0" pathLength="1"/>
+<line x1="267.9" y1="157.6" x2="381.5" y2="254.2" pathLength="1"/>
+<line x1="394.7" y1="262.8" x2="482.3" y2="305.5" pathLength="1"/>
+<line x1="497.8" y1="308.6" x2="521.4" y2="307.1" pathLength="1"/>
+<line x1="267.6" y1="148.8" x2="339.1" y2="80.6" pathLength="1"/>
+<line x1="257.5" y1="157.2" x2="200.5" y2="197.5" pathLength="1"/>
+<line x1="188.0" y1="203.8" x2="152.7" y2="215.2" pathLength="1"/>
+<line x1="140.5" y1="213.6" x2="113.9" y2="196.4" pathLength="1"/>
+<line x1="150.0" y1="223.0" x2="212.0" y2="317.1" pathLength="1"/>
+<line x1="222.9" y1="326.0" x2="286.1" y2="351.5" pathLength="1"/>
+<line x1="298.2" y1="357.8" x2="414.8" y2="434.0" pathLength="1"/>
+<line x1="216.4" y1="330.6" x2="221.6" y2="429.3" pathLength="1"/>
+<line x1="228.5" y1="439.7" x2="380.1" y2="510.9" pathLength="1"/>
+<line x1="103.5" y1="201.9" x2="102.0" y2="258.9" pathLength="1"/>
+<line x1="485.7" y1="316.3" x2="466.3" y2="352.4" pathLength="1"/>
+<line x1="460.1" y1="364.5" x2="427.5" y2="430.5" pathLength="1"/>
+</g><g class="gem-halo">
+<circle cx="159.0" cy="112.9" r="24.23" fill="url(#gem-glow)"/>
+<circle cx="103.8" cy="189.9" r="29.40" fill="url(#gem-glow)"/>
+<circle cx="423.1" cy="439.4" r="20.62" fill="url(#gem-glow)"/>
+<circle cx="489.6" cy="309.1" r="10.19" fill="url(#gem-glow)"/>
+<circle cx="529.0" cy="306.7" r="8.32" fill="url(#gem-glow)"/>
+<circle cx="387.5" cy="259.3" r="9.34" fill="url(#gem-glow)"/>
+<circle cx="216.0" cy="323.2" r="7.63" fill="url(#gem-glow)"/>
+<circle cx="292.4" cy="354.1" r="6.03" fill="url(#gem-glow)"/>
+<circle cx="101.8" cy="266.2" r="7.38" fill="url(#gem-glow)"/>
+<circle cx="146.2" cy="217.3" r="5.89" fill="url(#gem-glow)"/>
+<circle cx="194.7" cy="201.6" r="6.70" fill="url(#gem-glow)"/>
+<circle cx="262.9" cy="153.4" r="5.01" fill="url(#gem-glow)"/>
+<circle cx="344.4" cy="75.6" r="7.28" fill="url(#gem-glow)"/>
+<circle cx="386.9" cy="514.1" r="8.17" fill="url(#gem-glow)"/>
+<circle cx="221.9" cy="436.6" r="7.35" fill="url(#gem-glow)"/>
+<circle cx="463.0" cy="358.4" r="5.70" fill="url(#gem-glow)"/>
+</g><g class="gem-stars">
+<circle cx="159.0" cy="112.9" r="5.77" opacity="1.00"/>
+<circle cx="103.8" cy="189.9" r="7.00" opacity="1.00"/>
+<circle cx="423.1" cy="439.4" r="4.91" opacity="1.00"/>
+<circle cx="489.6" cy="309.1" r="3.18" opacity="0.91"/>
+<circle cx="529.0" cy="306.7" r="2.60" opacity="0.85"/>
+<circle cx="387.5" cy="259.3" r="2.92" opacity="0.88"/>
+<circle cx="216.0" cy="323.2" r="2.38" opacity="0.83"/>
+<circle cx="292.4" cy="354.1" r="1.88" opacity="0.77"/>
+<circle cx="101.8" cy="266.2" r="2.31" opacity="0.82"/>
+<circle cx="146.2" cy="217.3" r="1.84" opacity="0.76"/>
+<circle cx="194.7" cy="201.6" r="2.09" opacity="0.80"/>
+<circle cx="262.9" cy="153.4" r="1.57" opacity="0.72"/>
+<circle cx="344.4" cy="75.6" r="2.28" opacity="0.82"/>
+<circle cx="386.9" cy="514.1" r="2.55" opacity="0.85"/>
+<circle cx="221.9" cy="436.6" r="2.30" opacity="0.82"/>
+<circle cx="463.0" cy="358.4" r="1.78" opacity="0.75"/>
+</g>
+<g class="gem-labels"><text x="145.0" y="117.9" text-anchor="end">Castor</text><text x="89.8" y="194.9" text-anchor="end">Pollux</text>
+<text class="gem-name" x="427.5" y="197.3" text-anchor="middle">GEMINI</text></g></svg>
+          <figcaption class="gemini-note">Diagram. Star sizes not to scale.</figcaption>
+        </figure>
+        <div class="gemini-copy">
+          <p class="display-xl reveal" id="gemini-title">Look up <span class="tan">together.</span></p>
+          <p class="gemini-caption reveal">Gemini, the constellation the Geminids are named for.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="what-you-get">
+      <div class="wrap">
+        <header class="chapter-head">
+          <p class="kicker reveal"><span class="kicker-num">02</span>On the night</p>
+          <h2 class="display reveal">What a tour will include</h2>
+        </header>
+        <ul class="bento">
+          <li class="tile tile-hero reveal">
+            <svg class="tile-art" viewBox="0 0 320 220" aria-hidden="true">
+              <g class="art-stars"><circle cx="40" cy="38" r="1.4"/><circle cx="74" cy="176" r="1"/><circle cx="270" cy="44" r="1.3"/><circle cx="288" cy="150" r="0.9"/><circle cx="52" cy="110" r="0.9"/><circle cx="256" cy="186" r="1.1"/><circle cx="104" cy="30" r="0.8"/><circle cx="226" cy="22" r="1"/></g>
+              <g class="art-line">
+                <path class="art-frame" d="M24 52V24h28M268 24h28v28M296 168v28h-28M52 196H24v-28"/>
+                <circle cx="160" cy="112" r="74"/>
+                <circle class="art-ring" cx="160" cy="112" r="86"/>
+                <path d="M189.0 119.8L129.4 179.4M167.8 141.0L86.3 119.2M138.8 133.2L117.0 51.8M131.0 104.2L190.6 44.6M152.2 83.0L233.7 104.8M181.2 90.8L203.0 172.2"/>
+              </g>
+            </svg>
+            <h3 class="tile-label">A photo of you</h3>
+            <p>A photo of you under the night sky to take home.</p>
+          </li>
+          <li class="tile tile-wide reveal">
+            <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32a3 3 0 0 1 3 3v17a3 3 0 0 1-3 3H22l-9 7v-7H8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z"/><path d="M24 15.5l1.9 4.1 4.4.5-3.3 3 .9 4.4-3.9-2.2-3.9 2.2.9-4.4-3.3-3 4.4-.5z"/></svg>
+            <h3 class="tile-label">Sky talk</h3>
+            <p>A plain-English sky talk.</p>
+          </li>
+          <li class="tile reveal">
+            <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M40 8L15 33"/><path d="M33 9L20 22" opacity=".5"/><path d="M41 15L28 28" opacity=".5"/><circle cx="12" cy="36" r="4"/></svg>
+            <h3 class="tile-label">Meteor watching</h3>
+            <p>Help spotting meteors.</p>
+          </li>
+          <li class="tile reveal">
+            <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="15" r="5"/><path d="M15 38v-4a9 9 0 0 1 18 0v4"/><circle cx="10" cy="20" r="4"/><path d="M3 38v-3a7 7 0 0 1 9.5-6.5"/><circle cx="38" cy="20" r="4"/><path d="M45 38v-3a7 7 0 0 0-9.5-6.5"/></svg>
+            <h3 class="tile-label">Small group</h3>
+            <p>A small group.</p>
+          </li>
+          <li class="tile tile-wide reveal">
+            <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M5 30h24a5 5 0 0 1 0 10H5z"/><path d="M5 22h24a4 4 0 0 1 4 4"/><path d="M9 30v10"/><rect x="34" y="12" width="9" height="16" rx="2"/><path d="M36 12V8h5v4"/><circle cx="38.5" cy="20" r="1.6"/></svg>
+            <h3 class="tile-label">Provided</h3>
+            <p>Blankets and red lights provided.</p>
+          </li>
+          <li class="tile tile-wide reveal">
+            <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="18" cy="26" r="4.5"/><path d="M10 44v-4a8 8 0 0 1 16 0v4"/><path d="M21.5 22.5L28 16"/><path d="M36 5l1.6 3.6 3.9.4-2.9 2.6.8 3.9L36 13.6l-3.4 1.9.8-3.9-2.9-2.6 3.9-.4z"/></svg>
+            <h3 class="tile-label">For everyone</h3>
+            <p>No astronomy background needed.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="chapter chapter-prep" id="before-you-come">
+      <div class="wrap prep-grid">
+        <div class="prep-aside">
+          <p class="kicker reveal"><span class="kicker-num">03</span>A little prep</p>
+          <h2 class="display reveal">Before you come</h2>
+          <p class="prep-lede reveal">December desert nights get cold fast once you sit still.</p>
+        </div>
+        <div class="prep-main">
+          <ol class="checklist">
+            <li>Dress for near-freezing temperatures.</li>
+            <li>Wear closed-toe shoes.</li>
+            <li>Bring a warm hat and gloves.</li>
+            <li>Bring water.</li>
+            <li>Bring any medications you might need. Help can be far away.</li>
+            <li>Arrive with a full gas tank (there’s no fuel in the park) and a car in good shape for night driving.</li>
+            <li>Drive slowly after dark. Wildlife crosses park roads.</li>
+            <li>Plan for the park entrance fee, or bring your own valid park pass.</li>
+            <li>Download offline maps, since cell service is limited.</li>
+            <li>Use red lights only.</li>
+            <li>Watch for cactus and uneven ground.</li>
+          </ol>
+          <p class="pack-note reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Conditions change. Check <a class="tap-link" href="https://www.nps.gov/jotr/planyourvisit/conditions.htm" rel="noopener" target="_blank">current park alerts</a> before you go.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-gallery" id="gallery">
+      <div class="wrap">
+        <header class="chapter-head feature-head">
+          <div>
+            <p class="kicker reveal"><span class="kicker-num">04</span>From the night sky</p>
+            <h2 class="display reveal">Gallery</h2>
+          </div>
+          <p class="gallery-intro reveal">A first photograph from under the stars. More images will be added as they are cleared for the site.</p>
+        </header>
+        <figure class="feature-photo" data-scale>
+          <a class="frame-photo" href="joshua-tree-night-2000.jpg" data-lightbox>
+            <picture>
+              <source type="image/webp" srcset="joshua-tree-night-1200.webp 1200w, joshua-tree-night-2000.webp 2000w, joshua-tree-night-2656.webp 2656w" sizes="(min-width: 1024px) 100vw, 92vw">
+              <img src="joshua-tree-night-1200.jpg" srcset="joshua-tree-night-1200.jpg 1200w, joshua-tree-night-2000.jpg 2000w, joshua-tree-night-2656.jpg 2656w" sizes="(min-width: 1024px) 100vw, 92vw" alt="A Joshua tree in silhouette under a starry night sky." width="2656" height="3624" loading="lazy" decoding="async">
+            </picture>
+            <span class="frame-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span>
+          </a>
+          <figcaption class="caption">Photo: Khanh Toan Nguyen</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="chapter chapter-follow" id="follow-us">
+      <div class="finale-glow" aria-hidden="true"></div>
+      <div class="horizon" aria-hidden="true"></div>
+      <div class="wrap narrow follow-inner">
+        <p class="kicker kicker-center reveal"><span class="kicker-num">05</span>Stay in touch</p>
+        <h2 class="display-giant reveal">Follow us</h2>
+        <p class="follow-text reveal">Find us on Instagram and TikTok. We’ll share what we’re working on as the first tours take shape. For now, Instagram is the best way to reach us.</p>
+        <div class="social reveal">
+          <a class="btn btn-tan" href="https://www.instagram.com/socaldarksky.tours/">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="0.9" class="fill"/></svg>
+            Instagram
+          </a>
+          <a class="btn btn-tan" href="https://www.tiktok.com/@socaldarksky.tours">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 4v11.2a3.6 3.6 0 1 1-3.6-3.6"/><path d="M13 4c.4 2.6 2.4 4.6 5 4.9"/></svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-giant" aria-hidden="true">SOCAL DARK SKY TOURS</p>
+    <div class="wrap footer-inner">
+      <p class="wordmark wordmark-foot">SOCAL DARK SKY TOURS</p>
+      <div class="footer-lines">
+        <p class="footer-motto">Protect dark skies. Leave nothing behind.</p>
+        <p>Not affiliated with or endorsed by the National Park Service.</p>
+        <p>&copy; 2026 SoCal Dark Sky Tours</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo: Khanh Toan Nguyen">
+    <button class="lightbox-close" type="button" data-close><span class="visually-hidden">Close</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <img src="joshua-tree-night-2000.jpg" loading="lazy" decoding="async" alt="A Joshua tree in silhouette under a starry night sky." width="2000" height="2729">
+  </dialog>
+</body>
+</html>
